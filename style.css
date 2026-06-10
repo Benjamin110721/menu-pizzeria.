@@ -1,39 +1,141 @@
-body {
-  font-family: Arial, sans-serif;
-  padding: 20px;
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;600&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
-input, select, button {
-  display: block;
-  margin: 5px 0;
-  padding: 8px;
-  width: 250px;
+body{
+  background:#000;
+  font-family:'Montserrat',sans-serif;
 }
 
-button {
-  background: #28a745;
-  color: white;
-  border: none;
-  cursor: pointer;
+.menu-container{
+  position:relative;
+  min-height:100vh;
+  color:white;
+  padding:40px 30px;
+  overflow:hidden;
+  background:
+    linear-gradient(
+      rgba(0,0,0,.85),
+      rgba(0,0,0,.85)
+    ),
+    url("https://images.unsplash.com/photo-1513104890138-7c749659a591?w=1200");
+  background-size:cover;
+  background-position:center;
 }
 
-button:hover {
-  opacity: 0.9;
+.brand{
+  text-align:right;
+  margin-bottom:50px;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
+.brand h2{
+  font-family:'Cinzel',serif;
+  color:#f2e8b5;
+  font-size:3rem;
 }
 
-li {
-  margin: 5px 0;
-  background: #f4f4f4;
-  padding: 6px;
+.brand span{
+  letter-spacing:6px;
 }
 
-li button {
-  background: red;
-  width: auto;
-  margin-left: 10px;
+.hero{
+  text-align:center;
+  margin-bottom:40px;
+}
+
+.hero h1{
+  font-family:'Cinzel',serif;
+  color:#f2e8b5;
+  font-size:6rem;
+  letter-spacing:10px;
+}
+
+.hero h3{
+  letter-spacing:12px;
+  margin-top:10px;
+}
+
+.hero p{
+  font-size:1.5rem;
+  margin-top:10px;
+  border-top:2px solid #fff;
+  display:inline-block;
+  padding-top:10px;
+}
+
+.menu-title{
+  text-align:center;
+  margin-bottom:30px;
+}
+
+.menu-title h2{
+  font-family:'Cinzel',serif;
+  font-size:3rem;
+}
+
+.menu-list{
+  max-width:750px;
+  margin:auto;
+}
+
+.item{
+  margin-bottom:25px;
+  text-align:center;
+}
+
+.item h3{
+  font-family:'Cinzel',serif;
+  color:#f2e8b5;
+  font-size:2rem;
+  margin-bottom:8px;
+}
+
+.item p{
+  color:#eaeaea;
+  font-size:1.1rem;
+  line-height:1.5;
+}
+
+.footer{
+  margin-top:60px;
+  text-align:center;
+}
+
+.footer h3{
+  font-family:'Cinzel',serif;
+  font-size:2rem;
+  margin-bottom:20px;
+}
+
+.contact{
+  color:#f2e8b5;
+  font-weight:bold;
+  font-size:1.5rem;
+}
+
+.contact p{
+  margin:5px 0;
+}
+
+@media(max-width:768px){
+
+  .hero h1{
+    font-size:4rem;
+  }
+
+  .brand h2{
+    font-size:2.2rem;
+  }
+
+  .item h3{
+    font-size:1.5rem;
+  }
+
+  .contact{
+    font-size:1.1rem;
+  }
 }
