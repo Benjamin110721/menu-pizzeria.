@@ -1,61 +1,104 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Inventario Pizzería Benioli</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<div class="menu-container">
 
-<h1>🍕 Inventario Pizzería Benioli</h1>
+  <div class="brand">
+    <h2>Benioli</h2>
+    <span>PIZZERÍA</span>
+  </div>
 
-<!-- AGREGAR PRODUCTO -->
-<input type="text" id="producto" placeholder="Producto">
-<input type="number" id="cantidad" placeholder="Cantidad">
+  <section class="hero">
+    <h1>PIZZA</h1>
 
-<!-- 🔹 UNIDAD DE MEDIDA (AGREGADO) -->
-<select id="unidad">
-  <option value="unidad">Unidad</option>
-  <option value="kg">Kg</option>
-  <option value="ml">Ml</option>
-</select>
+    <h3>TAMAÑO FAMILIAR</h3>
 
-<input type="text" id="categoria" placeholder="Categoría">
-<button id="btnAgregar">Agregar producto</button>
+    <div class="size">
+      <span>12 SLICES, 16"</span>
+    </div>
+  </section>
 
-<input type="text" id="buscar" placeholder="Buscar producto">
+  <section class="menu-title">
+    <h2>NUESTRO MENÚ</h2>
+  </section>
 
-<ul id="lista"></ul>
+  <section class="menu-list">
 
-<hr>
+    <div class="item">
+      <h3>JAMÓN ₡7.000</h3>
+      <p>Salsa de tomate de la casa, mozzarella y jamón.</p>
+    </div>
 
-<!-- VENTA DE PIZZA -->
-<h2>🍕 Venta de Pizza</h2>
+    <div class="item">
+      <h3>PEPPERONI ₡7.000</h3>
+      <p>Salsa de tomate, mozzarella y pepperoni.</p>
+    </div>
 
-<select id="tipoPizza">
-  <option value="jamon">Jamón</option>
-  <option value="extravagante">Extravagante</option>
-  <option value="hawaiana">Hawaiana</option>
-  <option value="caseraespecial">Casera Especial</option>
-</select>
+    <div class="item">
+      <h3>HAWAIANA ₡7.000</h3>
+      <p>Salsa de tomate, mozzarella, jamón y piña.</p>
+    </div>
 
-<button id="btnVender">Vender pizza</button>
+    <div class="item">
+      <h3>HONGONADA ₡7.000</h3>
+      <p>Salsa de tomate, mozzarella, jamón y hongos.</p>
+    </div>
 
-<p id="mensaje"></p>
+    <div class="item">
+      <h3>EXTRAVAGANTE ₡7.500</h3>
+      <p>
+        Salsa BBQ, tocineta, cebolla,
+        chile dulce y carne molida.
+      </p>
+    </div>
 
-<hr>
+    <div class="item">
+      <h3>CASERA ESPECIAL ₡7.500</h3>
+      <p>
+        Salsa especial con tomate en cuadritos,
+        ajo en aceite de oliva, albahaca,
+        orégano, jamón, pepperoni y mozzarella.
+      </p>
+    </div>
 
-<!-- REPORTE -->
-<h2>📊 Reporte</h2>
-<button id="btnReporte">Ver reporte</button>
-<ul id="reporte"></ul>
+  </section>
 
-<hr>
+  <section class="menu-list">
 
-<!-- 🔹 NAVEGACIÓN A OTRAS PÁGINAS (AGREGADO) -->
-<a href="inventario.html">📦 Ver inventario completo</a><br>
-<a href="ventas.html">🍕 Ver pizzas vendidas</a>
+    <div class="item">
+      <h3>CAMARONES ₡8.500</h3>
+      <p>
+        Salsa de tomate de la casa,
+        mozzarella y camarones.
+      </p>
+    </div>
 
-<script src="script.js"></script>
-</body>
-</html>
+    <div class="item">
+      <h3>SUPREMA ₡7.000</h3>
+      <p>
+        Mozzarella, salsa de tomate,
+        hongos, jamón, cebolla,
+        chile dulce y carne molida.
+      </p>
+    </div>
+
+    <div class="item">
+      <h3>MEXICANA ₡7.000</h3>
+      <p>
+        Salsa de tomate, mozzarella,
+        jamón, chile dulce,
+        jalapeño y carne molida.
+      </p>
+    </div>
+
+  </section>
+
+  <footer>
+
+    <h3>SERVICIO A DOMICILIO</h3>
+
+    <div class="contact">
+      <p>📞 +506 6152 4671</p>
+      <p>✉ beniolipizzeria@gmail.com</p>
+    </div>
+
+  </footer>
+
+</div>
